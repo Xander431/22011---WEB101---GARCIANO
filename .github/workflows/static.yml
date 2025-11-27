@@ -1,43 +1,58 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xander Hian Garciano - Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f2f2f2;
+        }
+        .profile-container {
+            max-width: 500px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .profile-img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            margin-bottom: 0;
+        }
+        .info {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+<div class="profile-container">
+    
+    <!-- Profile Picture -->
+    <img src="IMG_20240412_112746_417~2.jpg" alt="Profile Picture" class="profile-img">
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    <h1>Garciano, Xander Hian.</h1>
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    <div class="info">
+        <div><span class="label">Location:</span> Caloocan City, Philippines</div>
+        <div><span class="label">Email:</span> garcianoxander@gmail.com</div>
+        <div><span class="label">Age:</span> 19</div>
+        <div><span class="label">Birthday:</span> August 01, 2006</div>
+    </div>
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+</div>
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+</body>
+</html>
