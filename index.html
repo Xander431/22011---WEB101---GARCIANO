@@ -1,59 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Web Profile</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xander Hian Garciano - Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f2f2f2;
+        }
+        .profile-container {
+            max-width: 500px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .profile-img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            margin-bottom: 0;
+        }
+        .info {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .label {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <div class="container" role="main">
-    <aside class="profile" aria-label="profile card">
-      <div class="avatar" title="Your avatar">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" alt="Avatar">
-      </div>
 
-      <h1 class="name">Your Name</h1>
-      <p class="role">Web Developer • Designer</p>
+<div class="profile-container">
+    
+    <!-- Profile Picture -->
+    <img src="IMG_20240412_112746_417~2.jpg" alt="Profile Picture" class="profile-img">
 
-      <div class="info">
-        <div class="pill"><span>Location</span><strong>City, Country</strong></div>
-        <div class="pill"><span>Email</span><strong>name@example.com</strong></div>
-        <div class="pill"><span>Website</span><strong>yourdomain.com</strong></div>
-      </div>
+    <h1>Garciano, Xander Hian.</h1>
 
-      <div class="socials">
-        <a href="#" aria-label="GitHub">GH</a>
-        <a href="#" aria-label="LinkedIn">in</a>
-        <a href="#" aria-label="Twitter">TW</a>
-      </div>
+    <div class="info">
+        <div><span class="label">Location:</span> Caloocan City, Philippines</div>
+        <div><span class="label">Email:</span> garcianoxander@gmail.com</div>
+        <div><span class="label">Age:</span> 19</div>
+        <div><span class="label">Birthday:</span> August 01, 2006</div>
+    </div>
 
-      <footer>Open to work • Available for projects</footer>
-    </aside>
+</div>
 
-    <section class="main">
-      <div class="bio">
-        Short bio here. Replace this text with a quick intro about yourself, interests and the kind of work you want.
-      </div>
-
-      <div class="section-title"><h2>Skills</h2></div>
-      <div class="skills">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-      </div>
-
-      <div class="section-title"><h2>Projects</h2></div>
-      <div class="projects">
-        <div class="card"><h3>Project A</h3><p>One-liner about the project.</p></div>
-        <div class="card"><h3>Project B</h3><p>One-liner about the project.</p></div>
-      </div>
-
-      <div class="contact">
-        <a class="btn" href="mailto:name@example.com">Email</a>
-        <a class="btn" href="#">Resume</a>
-      </div>
-    </section>
-  </div>
 </body>
 </html>
